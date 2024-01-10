@@ -1,0 +1,599 @@
+@import url(../css/reset.css);
+
+:root {
+    --main-color: #F8F8F8;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: url(../fonts/MullerRegular.ttf);
+}
+
+@font-face {
+    font-family: "MullerExtraBold";
+    src: url(../fonts/MullerBold.ttf);
+}
+
+body {
+    background-color: var(--main-color);
+    color: #000;
+    font-family: "Muller";
+}
+.container{
+    margin: 0% auto;
+    max-width: 1480px;
+}
+
+.header{
+    padding-left: 10%; 
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.header-nav{
+    /* делаем в один ряд */
+    display: flex; 
+    /* раздвигаем контент в разные стороны */
+    justify-content: space-between ;
+    align-items:center;
+}
+
+.logo{ 
+text-decoration: none;
+font-size: 24px;
+margin-bottom: 0.4vw;
+/* font-size: 2.0vw; */
+font-weight: 700;
+ color: #000;
+}
+
+.header-loginbutton{
+display: inline-block;
+color: #3B5998;
+font-size: 18px;
+font-weight: 400;
+text-decoration: none;
+padding-left: 44px;
+padding-right: 43px;  
+padding-top: 16px;
+padding-bottom: 16px;
+border-radius: 10px;
+border: 2.5px solid #3B5998;
+transition: 0.2s ease-in-out, background-color 2ms ease-in; 
+}
+
+.header-loginbutton:hover {
+background-color:#3B5998;
+color: #FFF;
+}
+
+.header-loginbutton:active{
+background-color:#405ea0;
+color: #FFF;
+}
+
+
+/* nav */
+.nav-list{
+align-items: center;
+display:flex;
+column-gap: 48px;
+list-style-type: none;
+}
+
+.nav-link{
+color: rgba(0, 0, 0, 0.80);
+font-size: 16px;
+font-weight: 400;
+text-decoration: none;
+}
+
+.services-container{
+position: relative;
+/*делаем запрет на выход за границы блока */
+min-height: 478px; 
+border-radius: 8px;
+margin-left: 5.5%;
+margin-right: 5.5%;
+margin-top: 40px;
+background-color: #D8DDE9;
+overflow: hidden;
+}
+
+.services-container{
+display: flex;
+    }
+
+
+.services-tittle{
+padding-top: 15%;
+max-width: 1000px;
+font-family: "MullerExtraBold";
+line-height: 1.2;
+color: #3B5998;
+font-size: 48px;
+font-style: normal;
+font-weight:100;
+margin-left: 7%;
+text-transform: uppercase;
+}
+
+.services-content p {
+max-width: 640px;
+margin-left: 7%;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 170%;
+padding-top: 24px;
+} 
+
+.services-button{
+margin-left: 7%;
+padding-top: 60px;
+}
+
+.btn{
+padding: 20px 38px ;
+color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-decoration: none;
+border-radius: 10px;
+background: #3B5998;
+width: 230px;
+height: 60px;
+flex-shrink: 0;
+transition: 0.2ms ease-in, 0,2ms ease-in;
+}
+
+.btn:hover {
+    background-color:#4764a3;
+}
+
+.btn:active {
+    background-color:#334d86;
+}
+
+.services-img{
+z-index: 6;
+right: 0;
+max-width: 500px;
+max-height: 500px;
+margin-top: 75px;
+margin-right: 48px;
+
+}
+
+.services-circle-bottom{
+width: 530px;
+height: 530px;
+border-radius: 550px;
+border: 1px solid rgba(59, 89, 152, 0.50);
+margin-top: 160px;
+margin-right: 24px;
+right: 0;
+position: absolute;
+z-index: 1;
+}
+
+.services-circle-middle{
+position: absolute;
+z-index: 2;
+width: 630px;
+right: 0;
+height: 630px;
+border-radius: 650px;
+border: 1px solid rgba(59, 89, 152, 0.30);
+margin-top: 110px;
+margin-right: -25px;
+}
+
+.services-circle-top{
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    width: 730px;
+    height: 730px;  
+    border-radius: 750px;
+    border: 1px solid rgba(59, 89, 152, 0.10);
+    margin-top: 55px;
+    margin-right: -68px;
+
+}
+
+.advantages-row{
+row-gap: 20px;
+flex-wrap: wrap;
+display: flex;
+justify-content: center;
+margin-top: 4%;
+column-gap: 20px;
+}
+
+.advantages-card{
+flex: 0 0 1;
+position:relative;
+border-radius: 10px;
+background: #FFF;
+width: 367px;
+height: 200px;
+box-shadow: 12px 10px 30px 0px rgba(59, 89, 152, 0.15);
+}
+
+.advantages-iconbackground{
+margin-right: 16px;
+margin-top: 16px;
+position: absolute;
+right: 0;
+width: 55px;
+height: 55px;
+border-radius: 10px;
+background: #E6EDFC;
+}
+
+.advantages-icon{
+display: inline;
+position: absolute; 
+right: 0;
+margin-right: 16px;
+margin-top: 16px;
+z-index: 5;
+}
+
+.advantages-truck-icon{
+margin-left: 11px;
+margin-top:14px;
+}
+
+.advantages-tittles{
+position: absolute;
+margin-top: 34px;
+margin-left: 31px;
+}
+
+.advantages-tittle{
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%;
+}
+
+.advantages-tittles p{
+color: rgba(0, 0, 0, 0.70);
+margin-top: 16px;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%
+}
+
+.advantages-first-tittle h3{
+max-width: 193px;
+}
+
+.advantages-first-tittle p{
+max-width: 239px;
+}
+
+.advantages-second-tittle h3{
+max-width: 214px;
+}
+
+.advantages-second-tittle p{
+max-width: 270px;
+}
+
+.advantages-third-tittle p{
+max-width: 239px;
+}
+
+.advantages-third-tittle{
+padding-top: 15px;
+}
+
+.product-tittle{
+font-family: "MullerExtraBold";
+margin-left: 10%;
+margin-top: 10%;
+color: #000;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%;
+text-transform: uppercase;
+}
+
+.cards-wrapper{
+margin-top: 64px;
+}
+
+
+.cards-square-row{
+flex-wrap: wrap;
+row-gap: 20px;
+position: relative;
+text-decoration: none; 
+display: flex;
+justify-content: center;
+column-gap: 20px;
+transition: ease-in 0.2ms;
+}
+
+
+.cards-wrapper a{
+overflow: hidden;
+display: block;
+border-radius: 10px;
+border: 1px solid rgba(59, 89, 152, 0.10);
+background: #F0F0F0;
+transition: ease-in-out 0.3ms, ease-in-out 0.3ms;
+}
+
+.cards-wrapper a:hover {
+    background: #3B5998;
+ }
+ .cards-wrapper a:hover .card-text{
+    color: #FFF;
+ }
+
+.card-square{
+flex: 0 0 1;
+width: 367px;
+height: 300px;
+}
+.card-square span{
+display:flex;
+margin-left: 28px;
+max-width: 262px;
+padding-top: 40px;
+bottom: 0;
+margin-bottom: 28px;
+}
+
+.cards-wrapper span{
+color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+
+.card-square{
+    position: relative;
+}
+
+.card-cable img{
+max-width: 339px;
+max-height: 116.779px;
+margin-left: -10px;
+/* margin-top: 55px; */
+}
+
+
+
+.img_absolute{
+position: absolute;
+margin-top: 40px;
+}
+
+.card-text{
+position: absolute;
+
+}
+
+
+
+.cards-rectangle-row{
+    row-gap: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-rectangle{
+position: relative;
+width: 560px;
+height: 300px;
+border-radius: 10px;
+background: #F0F0F0;
+}
+
+.card-server span{
+    padding-top: 36px;
+    padding-left: 28px;
+    top: 0;
+    margin-bottom: 40px;
+}
+
+.card-server img{
+min-width: 480.987px;
+height: 480px;
+margin-left: 122px;
+margin-top: -25px;
+}
+
+.card-cablesystem span{
+    padding-left: 30px;
+}
+
+.card-cablesystem img{
+    max-width: 512px;
+    max-height: 243px;
+    margin-left: 49px;
+}
+
+.partners-wrapper{
+    overflow: hidden;
+    margin-top: 64px;
+}
+
+.partners-content{
+display: flex;
+column-gap: 20px;
+justify-content:space-around;
+}
+
+.partners-tittle{
+text-align: center;
+margin-top: 10%;
+font-family: "MullerExtraBold";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; 
+text-transform: uppercase;
+}
+
+
+
+.partner-card{
+cursor: pointer;
+padding-top: 19px;
+padding-bottom: 19px;
+padding-left: 29px;
+padding-right: 29px;
+min-width: 173px;
+max-height: 80px;
+ border-radius: 10px;
+border: 1px solid rgba(59, 89, 152, 0.10);
+}
+
+    
+.partner-logo{
+min-width: 113px;
+height: 36.91px;
+}
+
+.logo-centred{
+margin-top: 5px;
+}
+
+
+
+.footer-wrapper{
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 15px 15px 0 0;
+    max-width: 1285px;
+    height: 320px;
+    background-color: #3B5998;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+}
+
+.footer-nav{
+     /* делаем в один ряд */
+     display: flex; 
+     /* раздвигаем контент в разные стороны */
+     justify-content: space-between ;
+     align-items:center;
+
+}
+
+.logo-footer{
+    text-decoration: none;
+font-size: 24px;
+margin-bottom: 0.4vw;
+/* font-size: 2.0vw; */
+font-weight: 700;
+ color:#FFF;
+}
+
+.nav-color{
+    color: #FFF;
+}
+
+.nav-position{
+margin-left: 95px;
+}
+
+.footer-account{
+    text-align: center;
+    color: #FFF;
+    padding: 16px 43px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+    .footer-account:hover {
+    background-color:#FFF;
+    color:#405ea0;
+    }
+    
+    .footer-account:active{
+     background-color:#F0F0F0;
+    color:#405ea0;
+    }
+
+.footer-address{
+    margin-top: -10px;
+    display: block;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.phone-number{
+    margin-top: 30px;
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%
+}
+
+.phone-number{
+display: block;
+}
+
+.shop-mail{
+    display: block;
+color: #FFF;
+padding-top: 18px;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+
+.cookies-info{
+    display: block;
+    max-width: 486px;
+    color: rgba(255, 255, 255, 0.50);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+
+.information_wrapper{
+    display: flex; 
+     /* justify-content: space-between ; */
+     gap: 23%;
+     align-items:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
